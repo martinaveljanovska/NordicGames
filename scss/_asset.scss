@@ -1,0 +1,153 @@
+.asset{
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 10px;
+
+  .asset-description{
+    max-width: 70ch;
+      margin: 0 auto;
+      text-align: center;
+    padding: 0 10px;
+    color: #fff;
+
+    #item-title{
+      position: relative;
+    }
+    p{
+      // width: 90%;
+    }
+  }
+
+  @media screen and(max-width: 600px){
+  .responsive-iframe{
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+
+    iframe{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+  .inplayer-paywall{
+    text-align: center;
+    // max-width: 500px;
+
+    .inplayer-preview-box{
+      padding: 0;
+      background: none;
+      border: none;
+      font-family: var(--font1);
+
+      .inplayer-imageholder{
+        &::after{
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+           background: rgba(0,0,0,.4);
+        }
+        .inplayer-paywallexplain{
+          display: none;
+        }
+      }
+
+      .inplayer-itemdetails{
+        display: none;
+        position: absolute;
+        color: #fff;
+        bottom: 140px;
+        left: 30px;
+        width: 54%;
+
+        .inplayer-title{
+          color: #fff;
+          font-weight: 600;
+          text-align: left;
+          font-size: 2em;
+          line-height: 1em;
+        }
+
+        p{
+          text-align: left;
+          font-weight: 200;
+        }
+      } // itemdetails
+
+      .inplayer-buybutton{
+        position: absolute;
+        top: calc(50% - 17px);
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+
+        .inplayer-button{
+          letter-spacing: normal;
+          width: initial;
+          text-transform: initial;
+          @extend .cta-btn;
+        }
+      }
+
+      .inplayer-preview-footer{
+        margin-top: 0;
+        border: none;
+
+        a{
+          // color: #fff;
+        }
+      }
+    } // inplayer preview box
+
+
+
+    @media screen and (max-width:645px){
+     .inplayer-preview-box{
+
+       .inplayer-imageholder{
+       }
+
+       .inplayer-itemdetails{
+        position: initial;
+        color: #222;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 1em;
+
+         .inplayer-title{
+           color: #222;
+         }
+       }
+
+       .inplayer-buybutton{
+         // position: initial;
+          width: 100%;
+          max-width: 210px;
+          padding: 0 1em;
+        }
+     }
+   } // preview box
+ } //inplayer paywall
+
+} // asset
+
+@media (max-width: 990px){
+  .asset{
+    flex-direction: column;
+
+    .asset-description{
+
+      p{
+        width: 100%;
+      }
+    }
+  }
+}
