@@ -144,5 +144,20 @@ body {
 			}
 		}
 	}
+
+	#promo {
+		.content {
+			margin: 0 auto;
+			.card {
+				margin: 0 20px;
+				img {
+					max-width: 80px;
+				}
+				p {
+					align-self: center;
+				}
+			}
+		}
+	}
 } //body
 /*# sourceMappingURL=style.scss.map */
