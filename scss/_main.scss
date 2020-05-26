@@ -147,7 +147,8 @@ body {
 
 	#promo {
 		.content {
-			margin: 0 auto;
+			justify-content: center;
+			align-items: center;
 			.card {
 				margin: 0 20px;
 				img {
@@ -155,6 +156,7 @@ body {
 				}
 				p {
 					align-self: center;
+					margin: 0 10px;
 				}
 			}
 		}

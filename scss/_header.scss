@@ -54,16 +54,18 @@
 			}
 		}
 
-		.image {
-			img {
-				width: 100%;
-				max-width: 600px;
-			}
-		}
+		// .image {
+		// 	img {
+		// 		width: 100%;
+		// 		max-width: 600px;
+		// 	}
+		// }
 
 		.sponsors {
-			.sponsors-logo {
-				// max-width: 120px;
+			justify-content: flex-end;
+			.logo-img {
+				max-width: 120px;
+				margin: 0 10px;
 			}
 		}
 	}
