@@ -5,6 +5,7 @@
 	display: flex !important;
 }
 
+.black-bg{background-color: #000;}
 .overflow {
 	overflow: hidden;
 }
@@ -14,14 +15,7 @@ p {
 	// color: #b1b1b1;
 	font-weight: 300;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	color: var(--primary);
-}
+
 
 .container-title {
 	color: var(--primary);
@@ -35,6 +29,7 @@ h6 {
 
 .button {
 	font-family: inherit;
+	display: inline-block;
 	border: 1px solid;
 	// border: none;
 	font-size: inherit;
@@ -42,7 +37,7 @@ h6 {
 	background-color: var(--primary);
 	color: #fff;
 	padding: 15px 40px;
-	margin: 0 10px;
+	margin: 10px;
 	// height: max-content;
 	position: relative;
 	cursor: pointer;
@@ -83,12 +78,6 @@ h6 {
 	}
 }
 
-.divider {
-	display: block;
-	height: 3px;
-	width: 200px;
-	margin: 0 auto;
-}
 
 a.link {
 	text-decoration: underline;
@@ -105,7 +94,7 @@ a.link {
 	display: none;
 	margin: 0;
 	position: fixed;
-	bottom: 250px;
+	bottom: 150px;
 	right: 23px;
 	width: 35px;
 	height: 35px;
