@@ -98,13 +98,9 @@
     </div>
   </div>
 
-  <div class="asset" id="asset">
-    <div class="asset-description">
-      <h1 id="item-title" class="container-title"></h1>
-      <p id="item-description"></p>
-    </div>
-    <div id="inplayer-101433" class="inplayer-paywall"></div>
-
+  <div class="packages">
+    <h3>Recorded NH20 Sessions and Gamigo Showcase</h3>
+    <div class="package-items" id="package-102357"></div>
   </div>
 
   <div class="section" id="promo">
@@ -161,7 +157,7 @@
     <a id="ip" href="https://inplayer.com/" target="_blank">Powered by InPlayer</a>
   </div>
 
-
+  <div id="inplayer-101433" class="inplayer-paywall"></div>
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -175,7 +171,7 @@
 
   <script type="text/javascript">
 
-    var paywall = new InplayerPaywall('ddd49fd0-fe60-4596-b656-4745c0527f27', [{ id: 101433 }]);
+    var paywall = new InplayerPaywall('ddd49fd0-fe60-4596-b656-4745c0527f27', [{ id: 101433, options: { noPreview: true, noInject: true } }]);
 
   </script>
   <script type="text/javascript" src="js/paywall.js"></script>
