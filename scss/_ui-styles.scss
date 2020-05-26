@@ -20,11 +20,11 @@ h3,
 h4,
 h5,
 h6 {
-	color: var(--lightblue);
+	color: var(--primary);
 }
 
 .container-title {
-	color: var(--lightblue);
+	color: var(--primary);
 	margin-bottom: 30px;
 
 	&.center::after {
@@ -39,9 +39,9 @@ h6 {
 	// border: none;
 	font-size: inherit;
 	font-weight: 400;
-	background-color: transparent;
+	background-color: var(--primary);
 	color: #fff;
-	padding: 15px 25px;
+	padding: 15px 50px;
 	// height: max-content;
 	position: relative;
 	cursor: pointer;
@@ -50,7 +50,7 @@ h6 {
 
 	&:hover,
 	&:focus {
-		background-color: #fff;
+		// background-color: var(--primary);
 		color: #222;
 		border-color: #fff;
 	}
@@ -70,7 +70,6 @@ h6 {
 .cta-btn {
 	@extend .button;
 
-	@include gradient-animation;
 	color: #fff;
 	border: none;
 	text-decoration: none;
