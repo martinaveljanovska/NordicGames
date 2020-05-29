@@ -1,21 +1,12 @@
 .asset{
   width: 100%;
-  max-width: 1200px;
+  max-width: 850px;
   margin: 0 auto;
+  padding: 20px;
+  text-align: center;
 
-  .asset-description{
-    max-width: 70ch;
-      margin: 0 auto;
-      text-align: center;
-    padding: 0 10px;
-    color: #fff;
-
-    #item-title{
-      position: relative;
-    }
-    p{
-      // width: 90%;
-    }
+  h2{
+    margin-top: 0;
   }
 
   @media screen and(max-width: 600px){
@@ -79,6 +70,7 @@
       .inplayer-preview-footer{
         margin-top: 0;
         border: none;
+        display: none;
       }
     } // inplayer preview box
 
